@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage Debe mostrar el componente correctamente con la imagen personalizada 1`] = `"<img class=\\"	productImg undefined\\" alt=\\"Product\\" src=\\"https://via.placeholder.com/300x200?text=No+Image\\">"`;
