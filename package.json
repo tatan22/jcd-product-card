@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0-rc",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -39,7 +39,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "do-product-card",
+  "name": "@tatan22/jcd-product-card",
   "author": "Jhonatan Cardona",
   "module": "dist/do-product-card.esm.js",
   "size-limit": [

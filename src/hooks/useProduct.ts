@@ -14,9 +14,6 @@ export const useProduct = ({
 	value = 0,
 	initialValues,
 }: useProductArgs) => {
-	// if (initialValues) {
-	// 	value = initialValues.count || value;
-	// }
 
 	const [counter, setCounter] = useState<number>(initialValues?.count || value);
 
@@ -42,7 +39,6 @@ export const useProduct = ({
 
 	}
 
-	// El use ref se puede usar como un elemento que no tiene dependencias de renderizado
 	useEffect(() => {
 		if (!isMounted.current) return;
 		setCounter(value);

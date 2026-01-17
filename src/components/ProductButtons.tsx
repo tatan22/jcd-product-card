@@ -3,7 +3,6 @@ import styles from "../styles/styles.module.css";
 import { ProductContext } from "./ProductContext";
 
 export interface Props {
-	// className para poder recibir estilos personalizados
 	className?: string;
 	style?: React.CSSProperties;
 	activeBtnClass?: string;
@@ -13,11 +12,8 @@ export const ProductButtons = ({ className, style }: Props) => {
 
 	const { increaseBy, counter, maxCount } = useContext(ProductContext);
 
-//TODO: Una función isMaxReached = useCallback, dependencias [counter, maxCounter]
-//? True si el count === maxCount, caso contrario False
-
 const isMaxReached = useCallback(
-	() => !!maxCount && counter === maxCount, // retorna true o false
+	() => !!maxCount && counter === maxCount, 
 	[counter, maxCount],
 )
 

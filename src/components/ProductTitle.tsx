@@ -8,7 +8,6 @@ export interface Props {
 	style?: React.CSSProperties;
 }
 
-// export const ProductTitle = ({ title, className }: { title?: string, className?: string }): ReactElement => {
 export const ProductTitle = ({ title, className, style }: Props): ReactElement => {
 	const { product } = useContext(ProductContext);
 
